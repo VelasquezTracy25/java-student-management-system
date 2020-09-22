@@ -15,4 +15,4 @@ This application will do the following:
     - Computer Science 101  
 - Each course costs $600 to enroll
 - The student should be able to view their balance and pay the tuition
-- To see the status of the student, we should ssee their name, ID, courses enrolled, and balance     
+- To see the status of the student, we should see their name, ID, courses enrolled, and balance     
