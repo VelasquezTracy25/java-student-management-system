@@ -62,6 +62,7 @@ public class Student {
 
     //Pay tuition
     public void payTuition() {
+        System.out.println("Your balance is: $" + tuitionBalance);
         System.out.println("What is the payment amount?");
         Scanner in = new Scanner(System.in);
         int payment= in.nextInt();
@@ -72,6 +73,8 @@ public class Student {
     }
 
 //Show current status
+public String showInfo(){
+return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: " + courses + "\nBalance: $" + tuitionBalance;}
 
 
 }
