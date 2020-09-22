@@ -74,7 +74,7 @@ public class Student {
 
 //Show current status
 public String showInfo(){
-return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: " + courses + "\nBalance: $" + tuitionBalance;}
+return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: " + courses + "\nYour balance is: $" + tuitionBalance;}
 
 
 }
