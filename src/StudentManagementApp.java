@@ -9,6 +9,5 @@ public class StudentManagementApp {
         stu1.enroll();
         stu1.payTuition();
         System.out.println(stu1.showInfo());
-        System.out.println(stu1.toString());
     }
 }

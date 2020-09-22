@@ -25,7 +25,6 @@ public class Student {
 
         generateId();
 
-        System.out.println(firstName + " " + lastName + " " + studentId);
     }
 
 //Generate ID
@@ -44,15 +43,12 @@ public class Student {
             Scanner in = new Scanner(System.in);
             String course = in.nextLine();
             if (!course.equalsIgnoreCase("q")) {
-                courses = courses + "" + "\n" + course;
+                courses = courses + "\n" + course;
                 tuitionBalance = tuitionBalance + costOfCourse;
             } else {
                 break;
             }
         } while (1 != 0);
-
-        System.out.println("ENROLLED IN: " + courses);
-        System.out.println("TUITION BALANCE: $" + tuitionBalance);
     }
 
     //View balance
@@ -62,7 +58,6 @@ public class Student {
 
     //Pay tuition
     public void payTuition() {
-        System.out.println("Your balance is: $" + tuitionBalance);
         System.out.println("What is the payment amount?");
         Scanner in = new Scanner(System.in);
         int payment= in.nextInt();
@@ -74,7 +69,11 @@ public class Student {
 
 //Show current status
 public String showInfo(){
-return "Name: " + firstName + " " + lastName + "\nCourses Enrolled: " + courses + "\nYour balance is: $" + tuitionBalance;}
+return "Name: " + firstName + " " + lastName +
+"\nYour grade level is: " + gradeYear +
+"\nYour ID is: $" + studentId +
+"\nCourses Enrolled: \n" + "--------------------" + courses +
+"\nYour balance is: $" + tuitionBalance;}
 
 
 }
