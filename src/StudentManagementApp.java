@@ -4,5 +4,8 @@ public class StudentManagementApp {
 
 //Create n number of new students
 
+    public static void main(String[] args) {
+        Student stu1 = new Student();
 
+    }
 }
